@@ -1,0 +1,218 @@
+@font-face {
+    font-family:new;
+    src: url("Fontdownload2.ttf");
+}
+@font-face{
+    font-family:new2;
+    src:url("Fontdownload.ttf");
+}
+body{
+background-color:rgb(26,25,25);
+color:white;
+font-family:new;
+}
+table{
+border-radius:15px;
+border-spacing:0px;
+}
+tr:nth-child(odd){
+background-color:rgb(18,18,18);
+}
+tr:nth-child(even){
+background-color:rgb(50,50,50);
+}
+tr{
+transition:1s;
+position:relative;
+}
+tr:hover{
+color:black;
+background-color:white;
+border-color:black;
+}
+.acc{
+text-align:center;
+}
+.activate{
+color:white;
+background-color:rgb(46, 224, 46);
+font-family:new2;
+padding:5px;
+border-radius:15px;
+text-decoration:none;
+transition:1s;
+position:relative;
+}
+.activate::after{
+background-color:rgb(247, 148, 0);
+content:'';
+position: absolute;
+bottom:0;
+left:10px;
+width:0%;
+height:5px;
+transition:1s;
+}
+.activate:hover::after{
+width:70%;
+}
+.activate:hover{
+opacity:0.9;
+background-color:rgb(57, 180, 57)
+}
+.block{
+    color:white;
+    background-color:red;
+    font-family:new2;
+    padding:5px;
+    border-radius:15px;
+    text-decoration:none;
+    position:relative;
+}
+.block::after{
+    background-color:rgb(97, 95, 207);
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:10px;
+    width:0%;
+    height:5px;
+    transition:1s;
+    }
+    .block:hover::after{
+    width:60%;
+    }
+    body{
+        background-color:rgb(26,25,25);
+        }
+        .rotation:hover{
+        color:rgb(24, 125, 207);
+        }
+        .logo{
+        position:absolute;
+        height:60px;
+        width:60px;
+        top:0px;
+        left:-10px;
+        }
+        .welcome::after{
+            content:'';
+            background-color:rgb(24, 125, 207);
+            position:absolute;
+            width:0%;
+            height:3px;
+            left:0px;
+            bottom:0px;
+            transition:1s;
+            }
+            .logo:hover ~ .welcome::after{
+            width:100%;
+            }
+        .welcome{
+        transition:1s;
+        position:absolute;
+        left:50px;
+        top:14px;
+        color:black;
+        font-family:new;
+        }
+        .welcome2{
+        color:black;
+        position:absolute;
+        top:100px;
+        left:-35px;
+        font-family:new;
+        transform:rotate(90deg);
+        transition:1s;
+        }
+        .logo:hover ~ .welcome2{
+            color:white;
+            }
+            .welcome2::before{
+                content:'';
+                background-color:rgb(24, 125, 207);;
+                position:absolute;
+                width:0%;
+                height:3px;
+                left:0px;
+                bottom:0px;
+                transition:1s;
+                }
+                .logo:hover ~ .welcome2::before{
+                    width:100%;
+                    }
+        .logo:hover ~ .welcome{
+        color:white;
+        }
+        .rotation{
+            color:white;
+            font-family:new;
+            float:left;
+            width:100%;
+            height:40px;
+            margin-top:-8px;
+           text-align:center;
+        background-color:black;
+        text-decoration:none;
+        }
+        .translation2{
+        float:right;
+        color:white;
+        transform:rotate(90deg) translateX(84%);
+        transform-origin:right;
+        display:block;
+        background-color:black;
+        text-align:center;
+        margin-right:20px;
+        text-decoration:none;
+        width: 120%;
+        height:55px;
+        font-family:new;
+        padding-bottom:5px;
+        }
+        .translation:hover,.translation2:hover{
+        color:rgb(24, 125, 207);
+        }
+        .edit{
+        text-align:center;
+        font-size:50px;
+        border:none;
+        }
+        .star{
+        display:inline-block;
+        color:rgb(26,25,25);
+        transition:1s;
+        }
+        .edit1{
+        display:inline-block;
+        position:relative;
+        }
+        .edit1::after{
+        content:'';
+        position:absolute;
+        width:0%;
+        background-color:gold;
+        height:10px;
+        bottom:0px;
+        left:0px;
+        transition:1s;
+        }
+        .edit1:hover ~ .star{
+        color:gold;
+        }
+        .edit1:hover::after{
+        width:100%;
+        }
+        .translation
+        {
+        transform-origin:left;
+        display:block;
+        color:white;
+        font-family:new;
+        width: 225%;
+        height:90px;
+        text-align:center;
+        transform:rotate(90deg) translateX(-51%);
+        background-color:black;
+        text-decoration:none;
+        }

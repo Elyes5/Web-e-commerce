@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+ <style>
+     form{
+         background-color: rgb(100, 98, 98);
+        width: 30%;
+        position: relative;
+        margin-left: 35% ;
+        color: white;
+       background-color: black;
+    } 
+     
+     label,input{
+         display: block;
+         border: none;
+         width: 97%;
+         margin-right: 0px;
+         margin-left: 6px;
+
+     }
+     input{
+        border-bottom:3px solid;
+        border-color:red;
+     }
+     input:valid{
+        border-bottom:3px solid;
+        border-color: green;
+     }
+     input{
+         height: 50px;
+         background-color: rgb(214, 211, 205);
+         border-radius: 10px;
+     }
+     #check{
+        height: 15px;
+        display: inline-block;
+        margin-top: -30px;
+
+     }
+    .ch{
+         text-align: center;
+     }
+     input[type="submit"],input[type="reset"]{
+            display: inline-block;
+            width: 20%;
+            background-color: white;
+            color: black;
+            text-shadow: 1px 1px 1px rgb(214, 208, 208);
+            opacity: 0.9;
+            
+        }
+        input[type="submit"]{
+            margin-left: 30%;
+        }
+        input[type="submit"]:hover,input[type="reset"]:hover{
+            opacity: 1;
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+            cursor: pointer;
+        }
+        #date:hover{
+            cursor: pointer;
+        }
+        input[type="radio"]{
+            height: 15px;
+        }
+
+        body{
+    background-image: url("cameraman.jpg");
+    background-size:cover;
+    animation:slide 20s infinite;
+    }
+    @keyframes  slide {
+    25%
+    {
+    background-image:url("imageecranjpg.jpeg")
+    }
+    50%
+    {
+    background-image:url("unitecentrale.jpg")
+    }
+    75%
+    {
+    background-image:url("images.jpg")
+    }
+    100%
+    {
+        background-image:url("cameraman.jpg")
+    }    
+    }
+    header{
+        font-family: 'Dancing Script', cursive;
+       font-size:17px;
+       color: white;
+       text-align: center;
+    }
+    table{
+        background-color:black;
+        border-radius: 5px ;
+        color: white;
+        margin-left: 6px;
+    }
+    td{
+        text-align: left;
+        width: 100px;
+    }
+    .r1:hover{
+        cursor: pointer;
+    }
+
+     
+ </style>
+</head>
+<body>
+    <a href="projet.php" style="color:white; font-family:new2; display:inline-block; border:1px solid white; text-decoration:none; font-weight:bold;" >&#10237 Precedent</a> 
+    <header><h1>Sign Up</h1></header>
+<form method="post" action="connect.php">
+    <label for="username" >Username</label>
+    <input type="text" placeholder="Username" id="username" name="username" required>
+    <label for="name" >Full Name</label>
+    <input type="text" placeholder="Full name" id="name" name="name" required>
+    <label for="date" >Birth Date</label>
+    <input type="date"  id="date"  name="Dness" required>
+    <table>
+        <tr>
+            <td class="sa">
+                <label for="r">Homme</label>
+            </td>
+            <td>
+                <input type="radio" name="r" class="r1" value=1 >
+            </td>
+        </tr>
+        <tr>
+            <td class="sa">
+                <label>Femme</label>
+            </td>
+            <td>
+                <input type="radio" name="r" class="r1" value=2 >
+            </td>
+        </tr>
+    </table>
+    </div>
+    <label for="mail" >Email</label>
+    <input type="email" placeholder="Email" id="mail" name="mail" required>
+    <label for="adresse" >Adresse</label>
+    <input type="text" name="adresse" placeholder="adresse" required>
+    <label for="pwd" >password</label>
+    <input type="password" placeholder="Password" id="pwd"  name="pas"   pattern="[A-Za-z0-9]{8}" required>
+    <label for="rpwd" >Repeat Password</label>
+    <input type="password" placeholder="Repeat Password" id="rpwd" required pattern="[A-Za-z0-9]{8}" name="pas2">
+    <div class="ch"> 
+    accept our <a href="TermsOfUse.html">terms & privacy</a><input type="checkbox" id="check" required checked>
+    </div>
+    <div class="btn">
+        <input type="submit" value="Create" id="sb">
+        <input type="reset" value="Annuler" id="an">
+    </div> 
+    
+
+    
+</form>
+</body>
+</html>

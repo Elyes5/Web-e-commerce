@@ -1,0 +1,117 @@
+
+@font-face{
+    src: url('Fontdownload2.ttf');
+    font-family:new;}
+@font-face{
+    src: url('Fontdownload.ttf');
+    font-family:new1;
+    }
+.table{
+border-spacing:0px;
+}
+.table .border {
+	border: #F0F0F0 1px solid;
+	padding: 10px; 
+ 
+	}
+td{
+    color:white;
+    font-family:new;
+}
+.none{
+border:none;
+}
+.left{
+float:left;
+}
+.valeur{
+    color:#C0C0C0;
+    font-size:100%;
+}
+h2{
+color:white;
+font-family:new1;
+}
+th{
+color:white;
+font-family:new;
+border:white solid 1px;
+}
+button{
+background-color:black;
+color:white;
+font-family:new;
+border-radius:15px;
+padding:1.2%;
+cursor:pointer;
+transition:0.5s
+}
+.imgcart{
+width:30px;
+height:30px;
+
+}
+.cart_div {
+	float:right;
+	font-weight:bold;
+	position:relative;
+    transition:0.5s;
+	}
+.suppimg{
+transition:0.5s;
+}
+.suppimg:hover{
+transform:translateY(-20%);
+}
+.cart_div:hover{
+    transform:translateY(-20%);
+    }
+.cart_div:hover span{
+background-color:rgb(73, 70, 70);
+}
+button:hover{
+transform:translateY(-25%);
+background-color:white;
+color:black;
+}
+body{
+background-color:rgb(26,25,25);
+}
+.cart_div a {
+	color:white;
+    font-family:new
+	}	
+.cart_div span {
+	font-size: 12px;
+    line-height: 14px;
+    background: #F68B1E;
+    padding: 2px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    left: 13px;
+    color: #fff;
+    width: 14px;
+    height: 13px;
+    text-align: center;
+    transition:1s;
+	}
+.cart .remove {
+    background: none;
+    border: none;
+    color: #0067ab;
+    cursor: pointer;
+    padding: 0px;
+    display: inline-flex;
+	}
+.cart .remove:hover {
+	text-decoration:underline;
+	}
+    .translateimg{
+        transform:translateY(0%);
+        transition:0.5s;
+        }
+        .translateimg:hover{
+        transform:translateY(-40%);
+        }

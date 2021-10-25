@@ -1,0 +1,125 @@
+@font-face {
+    font-family:new;
+    src: url("Fontdownload2.ttf");
+}
+body{
+background-color:rgb(26,25,25);
+color:white;
+font-family:new;
+}
+.paiement{
+    border:white 1px solid;
+}
+.button1,.button2{
+border-right:none;
+border-left:none;
+}
+.button2{
+height:150px;
+text-align:center;
+}
+.rotation{
+transform:rotate(180deg);
+position:relative;
+display:inline-block;
+}
+.en_cours{
+color:orange;
+width:100%;
+}
+.Confirmer{
+width:100%;
+color:rgb(37, 223, 37);
+}
+.Annuler{
+width:100%;
+color:red;
+}
+p{
+    display:inline-block;
+    position:relative;
+    top:-7px;
+    background-color:black;
+    width:10%;
+    height:22px;
+    text-align:center;
+
+}
+.detail{
+position:relative;
+transition:1s;
+}
+table{
+margin-top:10%;
+border:1px solid white;
+border-radius:15px;
+border-spacing:0px;
+}
+td{
+border:1px solid white;
+}
+
+th{
+color:rgb(24, 125, 207);
+}
+.bold{
+color:#C0C0C0;
+position:relative;
+}
+.bold::after{
+position:absolute;
+content:'';
+background-color:#C0C0C0;
+left:0;
+bottom:0;
+width:0%;
+height:3px;
+transition:1s;
+}
+button{
+font-family:new;
+color:black;
+height:35px;
+transition:1s;
+margin-top:25px;
+position:relative;
+}
+.comm{
+border-bottom:white 1px solid;
+border-top:none;
+border-left:none;
+border-right:none;
+}
+.delivery{
+position:relative;
+bottom:60px;
+left:66%;
+width:50px;
+height:40px;
+transition:1s;
+}
+button:hover{
+background-color:#001242;
+color:white;
+
+}
+h1{
+margin-top:5%;
+display:inline-block;
+}
+button::after{
+    position:absolute;
+    content:'';
+    background-color:rgb(24, 125, 207);
+    left:0;
+    bottom:0;
+    width:0%;
+    height:3px;
+    transition:1s;
+    }
+button:hover::after{
+width:100%;}
+.bold:hover::after{
+width:100%;
+
+}

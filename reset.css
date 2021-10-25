@@ -1,0 +1,261 @@
+@font-face{
+    src: url('fontdownload.ttf');
+    font-family:new;
+    }
+    @font-face{
+    src: url('Fontdownload2.ttf');
+    font-family:new2;
+    }
+    label{
+        color:black;
+        font-weight:bold;
+        font-family:'new', cursive;
+        font-size:17px;
+        }
+    .ResetPass{
+    float:right;
+    font-weight:bold;
+    font-family:new2;
+    animation:colored 5s infinite;
+    text-decoration:none;
+    font-size:14px;
+    font-style:italic;
+    }
+    .invalid{
+    font-family:new2;
+    background-color:black;
+    display:block;
+    animation:invcolor infinite 5s;
+    }
+    @keyframes invcolor{
+        0%
+        {color:black;
+        }
+        25%{
+        color:red;
+        }
+        50%{
+        color:red
+        }
+        75%{
+        color:red;
+        }
+        100%{
+        color:red;
+        }
+        }
+    @keyframes colored{
+    0%
+    {color:black;
+    }
+    25%{
+    color:black;
+    }
+    50%{
+    color:black
+    }
+    75%{
+    color:rgb(24, 125, 207);
+    }
+    100%{
+    color:rgb(24, 125, 207);
+    }
+    }
+        body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-image: url("cameraman.jpg");
+        background-size:cover;
+        animation:slide 20s infinite;
+        }
+        @keyframes  slide {
+        25%
+        {
+        background-image:url("imageecranjpg.jpeg")
+        }
+        50%
+        {
+        background-image:url("unitecentrale.jpg")
+        }
+        75%
+        {
+        background-image:url("images.jpg")
+        }
+        100%
+        {
+            background-image:url("cameraman.jpg")
+        }    
+        }
+    .group{
+    width:500px;
+    }
+    .container{
+    width:100%;
+    }
+    #img1{
+    width:30%;
+    height:100px;
+    margin-left:-80%;
+    }
+    #img1:hover{
+    cursor:pointer;
+    }
+    #labelimg1{
+    font-family: 'Orbitron', sans-serif;
+    font-size:14px;
+    color:white;
+    margin-left:-22px;
+    position:absolute;
+    left:13%;
+    bottom:20%;
+    font-family:new2;
+    }
+    
+    #Login{
+    font-family: 'new', cursive;
+    font-size:50px;
+    margin-bottom:50px;}
+    .container1{
+    background-color:white;
+    padding-bottom:2%;
+    width:100%;
+    }
+    input[type="text"],input[type="password"]
+    {background-color:lightgray;
+    border:none;
+    padding:10px;
+    margin-bottom:5px;
+    margin-top:5px;
+    border-style:none;
+    border-bottom:3px solid;
+    border-color:red;
+    }
+    input[type="text"]:focus,input[type="password"]:focus
+    {background-color:rgb(184, 177, 177)
+    }
+    #buttonlogin
+    {background-color:black;
+    font-weight:bolder;
+    border:thin 1px;
+    border-color:gray;
+    color:white;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:5px;
+    padding-top:5px;
+    border-radius:15px;
+    }
+    #Sign{
+    border:none;
+    text-decoration:underline;
+    font-style:italic;
+    color:darkblue;
+    bottom:0px;
+    right:0px;
+    background-color:black;
+    color:white;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    }
+    #Sign,#buttonlogin,#Contact:hover{
+    cursor:pointer;
+    }
+    #accountcrea{
+    position:absolute;
+    bottom: 0%;
+    left:1%;
+    font-family: 'new', cursive;
+    color:white;
+    background-color:black;
+    font-size:15px;
+    }
+    #company{
+    font-family: 'Permanent Marker', cursive;
+    color:white;
+    font-size:20px;
+    }
+    .container2{
+    position:relative;
+    background-color:black;
+    width:100%;
+    }
+    input[type="text"]:valid,input[type="password"]:valid{
+    border-bottom-color:rgb(51, 190, 51);  
+    }
+    #Contact{
+        background-color:black;
+        font-weight:bold;
+        border-color:white;
+        border-style:solid 2px;
+        border-radius:0px;
+        height:25px;
+        width:70%;
+        position:absolute;
+        right:20px;
+        top:28px;
+        color:white;
+        transition:1s;
+        }
+    #Contact:hover{
+        background-color:white;
+        color:black;
+        border-style:solid 2px;
+        border-radius:0px;
+        border-color:black;
+    }
+    .divsucc{
+    width:100%;
+    background-color:black;
+    }
+    .result2{
+        display:none;
+        color:black;
+        font-family:'new';
+        font-size:16px;
+        width:275px;
+        animation:show1 3s infinite;
+        display:inline-block;
+        }
+        @keyframes show1{
+            0%
+            {
+            color:black;
+            }
+            50%{
+            color:rgb(40, 155, 40);
+            }
+            75%{
+            color:rgb(40, 155, 40);
+            }
+            100%
+            {
+            color:rgb(40, 155, 40);
+            }
+            }
+            .result3{
+                display:none;
+                color:black;
+                font-family:'new';
+                font-size:16px;
+                width:275px;
+                animation:show2 3s infinite;
+                display:inline-block;
+                }
+                @keyframes show2{
+                    0%
+                    {
+                    color:black;
+                    }
+                    50%{
+                    color:red;
+                    }
+                    75%{
+                    color:red;
+                    }
+                    100%
+                    {
+                    color:red;
+                    }
+                    }

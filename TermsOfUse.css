@@ -1,0 +1,21 @@
+@font-face {
+    font-family:new;
+    src: url("font.ttf");
+}
+body{
+background-color:rgb(26, 25, 25);
+}
+h2,h1,p{
+color:white;
+font-family:new;
+}
+.Logo{
+    float:left;
+    }
+    #edit{
+    margin-top:-2%;
+    margin-left:1%;
+    }
+    .image2{
+    width:5%;
+    }
